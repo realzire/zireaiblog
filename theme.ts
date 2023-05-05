@@ -1,21 +1,21 @@
-import { buildLegacyTheme } from "sanity";
+import {buildLegacyTheme, defineConfig} from 'sanity'
 
 const props = {
     "--my-white": "#fff",
     "--my-black": "#1a1a1a",
-    "--zire-brand": "#F7AB0A",
+    "--zire-brand": "#EA4242",
     "--my-red": "#db4437",
     "--my-yellow": "#f4b400",
     "--my-green": "#0f9d58",
 }
 
 
-export const myTheme = buildLegacyTheme ({
+export const myTheme = buildLegacyTheme({
 
     "--white": props["--my-white"],
     "--black": props["--my-black"],
     "--gray": "#666",
-    "--gray-base": "666",
+    "--gray-base": "#666",
 
     "--component-bg": props["--my-black"],
     "--component-text-color": props["--my-white"],
@@ -33,8 +33,10 @@ export const myTheme = buildLegacyTheme ({
     "--state-warning-color": props["--my-yellow"],
     "--state-danger-color": props["--my-red"],
 
-    "--main-navigation-color--inverted": props["--my-white"],
+    
     "--main-navigation-color": props["--my-black"],
+    "--main-navigation-color--inverted": props["--my-white"],
 
     "--focus-color": props["--zire-brand"],
-})
+});
+
