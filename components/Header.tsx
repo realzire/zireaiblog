@@ -17,7 +17,13 @@ function Header() {
                 </Link>
                 <h1>ZireAI</h1>
             </div>
-            <div></div>
+            <div>
+                <Link
+                    href="https://www.youtube.com/c/realzire"
+                    className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#EA4242] flex items-center rounded-full text-center" >
+                Visit Zire on YouTube
+                </Link>
+            </div>
         </header> 
     )
        

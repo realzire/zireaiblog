@@ -1,4 +1,5 @@
 import Header from '../../components/Header';
+import Banner from '../../components/Banner'; 
 import '../../globals.css';
 
 
@@ -9,8 +10,9 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>
+      <body className='max-w-7xl mx-auto'>
         <Header />
+        <Banner />
         {children}</body>
     </html>
   )
